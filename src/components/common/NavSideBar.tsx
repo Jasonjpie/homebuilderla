@@ -2,30 +2,30 @@
 
 import Link from "next/link"
 import classNames from "classnames"
-import { usePathname } from "next/navigation"
 import { CiCircleAlert } from "react-icons/ci"
 import { BiHelpCircle } from "react-icons/bi"
+import { useAppSelector } from "@/store/hooks"
 
 type Props = {}
 
 const NavSideBar = (props: Props) => {
-    const path = usePathname()
+    const { currentSection } = useAppSelector(state => state.nav)
     const Routes = [
         {
             name:'Home',
-            route:'/'
+            route:'/home'
         },
         {
             name:'Services',
-            route:'/#services'
+            route:'/services'
         },
         {
             name:'About Us',
-            route:'/#about-us'
+            route:'/about-us'
         },
     ]
   return (
-    <div className="flex flex-col gap-10 absolute top-0 left-0 w-44 h-[100vh]  p-3">
+    <div className="flex flex-col gap-10 absolute top-0 left-0 w-44 h-full  max-h-[1000px]  p-3">
         <Link href='/' className="text-[#0A72AD] text-4xl font-bold">BUILDER</Link>
         <div>
             <div className="mb-8">Main</div>
@@ -35,9 +35,10 @@ const NavSideBar = (props: Props) => {
                         <Link 
                         key={index}
                         href={route.route} 
-                        className={classNames("w-full py-3 text-center",
+                        className={classNames("w-full py-3 border-r-8 text-center",
                         {
-                            "border-r-8 border-r-[#4E52AE]":path === route.route
+                            "border-r-[#4E52AE]":currentSection === route.route,
+                            "border-r-white":currentSection !== route.route
                         })} >
                             {route.name}
                         </Link>

@@ -1,4 +1,3 @@
-'use client'
 import  { BiLogoFacebook,BiLogoLinkedin } from 'react-icons/bi'
 import { PiInstagramLogoLight } from 'react-icons/pi'
 import { AiOutlineTwitter } from 'react-icons/ai'
@@ -7,7 +6,7 @@ type Props = {}
 
 const RightSideBar = (props: Props) => {
   return (
-        <div className="absolute flex flex-col justify-center gap-24 top-0 right-0 w-28 h-[100vh] p-2">
+        <div className="absolute flex flex-col justify-center gap-24 top-0 right-0 w-28 max-h-[1000px] h-full p-2">
             <div className="flex flex-col items-center gap-3">
                 <div className='p-3 rounded-full shadow-md'> <BiLogoFacebook size={25}/>  </div>
                 <div className='p-3 rounded-full shadow-md'> <PiInstagramLogoLight size={25}/>  </div>
