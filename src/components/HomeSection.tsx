@@ -15,16 +15,16 @@ const HomeSection = (props: Props) => {
     const dispatch = useAppDispatch()
     useEffect(()=>{
         if(inView){
-            dispatch(setCurrentSection('/home'))
+            dispatch(setCurrentSection('#home'))
         }
     }, [inView])
 
   return (
-    <div ref={ref} className="flex flex-col text-center items-center gap-10 pt-16">
+    <div ref={ref} id='home' className="flex flex-col text-center items-center gap-10 pt-16">
         <div className="font-medium text-5xl max-w-lg">Our Wide Range of Professional Service</div>
         <div>Dedicated to Transforming Your Unique Visions into Remarkable Realities with Expertise and Passion</div>
         <div className='grid grid-cols-12 gap-10'>
-            <div className='col-span-12 sm:col-span-6 lg:col-span-4 p-10 flex flex-col gap-5 bg-black text-white text-left'>
+            <div className='col-span-12 md:col-span-6 lg:col-span-4 p-10 flex flex-col gap-5 bg-black text-white text-left'>
                 <div className='flex justify-between'>
                     <div className='font-bold text-3xl'>01</div>
                     <BsArrowUpRight size={30} className='text-white'/>
@@ -32,7 +32,7 @@ const HomeSection = (props: Props) => {
                 <div className='font-semibold text-2xl max-w-xs'>Interior Design</div>
                 <div>Interior design plays a significant role in the look, feel, and functionality of a space, and can greatly impact our daily lives.</div>
             </div>
-            <div className='col-span-12 sm:col-span-6 lg:col-span-4 p-10 flex flex-col gap-5 bg-black text-white text-left'>
+            <div className='col-span-12 md:col-span-6 lg:col-span-4 p-10 flex flex-col gap-5 bg-black text-white text-left'>
                 <div className='flex justify-between'>
                     <div className='font-bold text-3xl'>02</div>
                     <BsArrowUpRight size={30} className='text-white'/>
@@ -40,7 +40,7 @@ const HomeSection = (props: Props) => {
                 <div className='font-semibold text-2xl max-w-xs'>Construction Management</div>
                 <div>Expert construction management ensuring seamless project execution, on-time delivery, and budget adherence for your dream projects.</div>
             </div>
-            <div className='col-span-12 sm:col-span-6 lg:col-span-4 p-10 flex flex-col gap-5 bg-[#FFD400] text-black text-left'>
+            <div className='col-span-12 md:col-span-6 lg:col-span-4 p-10 flex flex-col gap-5 bg-[#FFD400] text-black text-left'>
                 <div className='flex justify-between'>
                     <div className='font-bold text-3xl'>03</div>
                     <BsArrowUpRight size={30} className='text-black'/>

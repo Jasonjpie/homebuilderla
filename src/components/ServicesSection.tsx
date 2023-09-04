@@ -16,11 +16,11 @@ const ServicesSection = (props: Props) => {
     const dispatch = useAppDispatch()
     useEffect(()=>{
         if(inView){
-            dispatch(setCurrentSection('/services'))
+            dispatch(setCurrentSection('#services'))
         }
     }, [inView])
   return (
-    <div ref={ref} className="flex flex-col gap-16">
+    <div ref={ref} id='services' className="flex flex-col gap-16 pt-16">
         <div className="flex flex-col text-center gap-5 items-center">
             <div className="font-bold text-4xl">Our Services</div>
             <div className="text-[#81838C] max-w-md">Dedicated to Transforming Your Unique Visions into Remarkable Realities with Expertise and Passion</div>

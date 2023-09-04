@@ -13,19 +13,19 @@ const NavSideBar = (props: Props) => {
     const Routes = [
         {
             name:'Home',
-            route:'/home'
+            route:'#home'
         },
         {
             name:'Services',
-            route:'/services'
+            route:'#services'
         },
         {
             name:'About Us',
-            route:'/about-us'
+            route:'#about-us'
         },
     ]
   return (
-    <div className="flex flex-col gap-10 absolute top-0 left-0 w-44 h-full  max-h-[1000px]  p-3">
+    <div className="flex flex-col gap-10 absolute top-0 left-0 w-44 h-[100vh]  max-h-[1000px]  p-3">
         <Link href='/' className="text-[#0A72AD] text-4xl font-bold">BUILDER</Link>
         <div>
             <div className="mb-8">Main</div>

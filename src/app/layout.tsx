@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import App from '@/components/App'
+import App from '@/components/common/App'
 import { Providers } from '@/store/provider'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html className='overflow-hidden' lang="en">
         <body className={`relative max-w-[1560px] w-full h-full mx-auto ${inter.className}`}>
           <Providers>
            <App>{children}</App>
