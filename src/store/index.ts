@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 import navigation from './navigation'
-
+import scrollable from './scrollable'
 export const store = configureStore({
   reducer: {
-    nav:navigation
+    nav:navigation,
+    scroll:scrollable
   },
 })
 

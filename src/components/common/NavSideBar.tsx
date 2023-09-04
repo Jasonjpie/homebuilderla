@@ -26,8 +26,8 @@ const NavSideBar = (props: Props) => {
     ]
   return (
     <div className="flex flex-col gap-10 absolute top-0 left-0 w-44 h-[100vh]  max-h-[1000px]  p-3">
-        <Link href='/' className="text-[#0A72AD] text-4xl font-bold">BUILDER</Link>
-        <div>
+        <Link href='/' className="fixed md:static top-0 z-30 w-full text-[#0A72AD] text-4xl font-bold bg-white">BUILDER</Link>
+        <div className="hidden md:block">
             <div className="mb-8">Main</div>
             <div className="flex flex-col font-bold">
                 {
@@ -46,7 +46,7 @@ const NavSideBar = (props: Props) => {
                 }
             </div>
         </div>
-        <div className="mt-auto">
+        <div className="mt-auto hidden md:block">
             <div className="mb-8">OTHERS</div>
             <div className="flex flex-col font-bold">
                 <Link href='' className="flex gap-3 items-center w-full py-3" >
