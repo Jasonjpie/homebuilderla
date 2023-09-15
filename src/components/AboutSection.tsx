@@ -46,7 +46,11 @@ const AboutSection = (props: Props) => {
                         <div>Beautify result</div>
                     </div>
                 </div>
-                <button className="flex items-center gap-3 px-5 py-2 text-white bg-[#416FF4] rounded-md self-start">
+                <button className="flex items-center gap-3 px-5 py-2 text-white bg-[#416FF4] rounded-md self-start"
+                onClick={() => {
+                    window.open("https://jjp-beta.vercel.app/", "_blank");
+                  }}
+                >
                     <div>Visit Website</div>
                     <FiArrowRight size={25}/>
                 </button>
@@ -84,7 +88,11 @@ const AboutSection = (props: Props) => {
                         <div>100+ proof of work</div>
                     </div>
                 </div>
-                <button className="flex items-center gap-3 px-5 py-2 text-white bg-[#416FF4] rounded-md self-start">
+                <button className="flex items-center gap-3 px-5 py-2 text-white bg-[#416FF4] rounded-md self-start"
+                onClick={() => {
+                    window.open("https://shelter-nine.vercel.app/", "_blank");
+                  }}
+                  >
                     <div>Visit Website</div>
                     <FiArrowRight size={25}/>
                 </button>
