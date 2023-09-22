@@ -16,12 +16,12 @@ const NavSideBar = (props: Props) => {
             route:'#home'
         },
         {
-            name:'Services',
-            route:'#services'
-        },
-        {
             name:'About Us',
             route:'#about-us'
+        },
+        {
+            name:'Contact Us',
+            route:'#contact-us'
         },
     ]
   return (

@@ -45,7 +45,7 @@ const HomeSection = (props: Props) => {
                     <div className='font-bold text-3xl'>03</div>
                     <BsArrowUpRight size={30} className='text-black'/>
                 </div>
-                <div className='font-semibold text-2xl max-w-xs'>Home Redesign</div>
+                <div className='font-semibold text-2xl max-w-xs'>Architectural Design</div>
                 <div>Transform your living space with a home redesign that adds style, functionality, and a fresh perspective to your environment.</div>
             </div>
         </div>
