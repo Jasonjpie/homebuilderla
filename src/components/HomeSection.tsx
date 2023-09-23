@@ -25,8 +25,8 @@ const HomeSection = (props: Props) => {
             <div className="font-medium text-5xl max-w-lg">Our Wide Range of Professional Service</div>
             <div>Dedicated to Transforming Your Unique Visions into Remarkable Realities with Expertise and Passion</div>
             <div className='grid grid-cols-12 gap-10'>
-                <div className='col-span-12 md:col-span-6 lg:col-span-4 p-10 flex flex-col gap-5 bg-black text-white text-left'>
-                    <Link href='https://shelter-nine.vercel.app/' target='_blank'>
+                <div className='col-span-12 md:col-span-6 lg:col-span-4 p-10 bg-black text-white text-left'>
+                    <Link className='flex flex-col gap-5' href='https://shelter-nine.vercel.app/' target='_blank'>
                         <div className='flex justify-between'>
                             <div className='font-bold text-3xl'>01</div>
                             <BsArrowUpRight size={30} className='text-white' />
@@ -35,8 +35,8 @@ const HomeSection = (props: Props) => {
                         <div>Interior design plays a significant role in the look, feel, and functionality of a space, and can greatly impact our daily lives.</div>
                     </Link>
                 </div>
-                <div className='col-span-12 md:col-span-6 lg:col-span-4 p-10 flex flex-col gap-5 bg-black text-white text-left'>
-                    <Link href='https://jjp-beta.vercel.app/' target='_blank'>
+                <div className='col-span-12 md:col-span-6 lg:col-span-4 p-10 bg-black text-white text-left'>
+                    <Link className='flex flex-col gap-5' href='https://jjp-beta.vercel.app/' target='_blank'>
                         <div className='flex justify-between'>
                             <div className='font-bold text-3xl'>02</div>
                             <BsArrowUpRight size={30} className='text-white' />
@@ -45,8 +45,8 @@ const HomeSection = (props: Props) => {
                         <div>Expert construction management ensuring seamless project execution, on-time delivery, and budget adherence for your dream projects.</div>
                     </Link>
                 </div>
-                <div className='col-span-12 md:col-span-6 lg:col-span-4 p-10 flex flex-col gap-5 bg-[#FFD400] text-black text-left'>
-                    <Link href='https://shelter-nine.vercel.app/' target='_blank'>
+                <div className='col-span-12 md:col-span-6 lg:col-span-4 p-10 bg-[#FFD400] text-black text-left'>
+                    <Link className='flex flex-col gap-5' href='https://shelter-nine.vercel.app/' target='_blank'>
                         <div className='flex justify-between'>
                             <div className='font-bold text-3xl'>03</div>
                             <BsArrowUpRight size={30} className='text-black' />
