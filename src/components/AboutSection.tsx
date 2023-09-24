@@ -7,6 +7,7 @@ import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
 import { setCurrentSection } from '@/store/navigation'
 import { useAppDispatch } from '@/store/hooks'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -56,10 +57,10 @@ const AboutSection = (props: Props) => {
                 </button>
             </div>
             <div className="flex items-center gap-3">
-                <div className='p-3 rounded-full bg-black shadow-md'> <BiLogoFacebook className='text-white' size={25}/>  </div>
-                <div className='p-3 rounded-full bg-black shadow-md'> <PiInstagramLogoLight className='text-white' size={25}/>  </div>
-                <div className='p-3 rounded-full bg-black shadow-md'> <AiOutlineTwitter className='text-white' size={25}/>  </div>
-                <div className='p-3 rounded-full bg-black shadow-md'> <BiLogoLinkedin className='text-white' size={25}/>  </div>
+                <div className='p-3 rounded-full bg-black shadow-md'> <Link href='https://www.facebook.com/Jjpconstruction/' target="_blank" ><BiLogoFacebook className='text-white' size={25} /></Link>   </div>
+                <div className='p-3 rounded-full bg-black shadow-md'> <Link href='https://www.facebook.com/Jjpconstruction/' target="_blank"><PiInstagramLogoLight className='text-white' size={25} /> </Link> </div>
+                <div className='p-3 rounded-full bg-black shadow-md'> <Link href=""><AiOutlineTwitter className='text-white' size={25} /> </Link>  </div>
+                <div className='p-3 rounded-full bg-black shadow-md'> <Link href='https://www.linkedin.com/company/jjp-construction' target="_blank"><BiLogoLinkedin className='text-white' size={25} /></Link>  </div>
             </div>
         </div>
         <div className='flex flex-col gap-10'>
@@ -98,10 +99,10 @@ const AboutSection = (props: Props) => {
                 </button>
             </div>
             <div className="flex items-center gap-3">
-                <div className='p-3 rounded-full shadow-md'> <BiLogoFacebook size={25}/>  </div>
-                <div className='p-3 rounded-full shadow-md'> <PiInstagramLogoLight size={25}/>  </div>
-                <div className='p-3 rounded-full shadow-md'> <AiOutlineTwitter size={25}/>  </div>
-                <div className='p-3 rounded-full shadow-md'> <BiLogoLinkedin size={25}/>  </div>
+                <div className='p-3 rounded-full shadow-md'><Link href='https://www.facebook.com/Jjpconstruction/' target="_blank" ><BiLogoFacebook size={25}/></Link></div>
+                <div className='p-3 rounded-full shadow-md'><Link href='https://www.facebook.com/Jjpconstruction/' target="_blank"><PiInstagramLogoLight size={25}/></Link></div>
+                <div className='p-3 rounded-full shadow-md'><Link href = ""><AiOutlineTwitter size={25}/></Link></div>
+                <div className='p-3 rounded-full shadow-md'><Link href='https://www.linkedin.com/company/jjp-construction' target="_blank"><BiLogoLinkedin size={25}/></Link></div>
             </div>
         </div>
     </div>

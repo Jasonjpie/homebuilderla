@@ -4,6 +4,7 @@ import { AiOutlineTwitter } from 'react-icons/ai'
 import { TfiMouseAlt } from 'react-icons/tfi'
 import { useAppDispatch, useAppSelector } from '@/store/hooks'
 import { setScrollToBottom, setScrollToTop } from '@/store/scrollable'
+import Link from 'next/link'
 type Props = {}
 
 const RightSideBar = (props: Props) => {
@@ -19,10 +20,10 @@ const RightSideBar = (props: Props) => {
   return (
         <div className="absolute flex flex-col justify-center gap-24 top-0 right-0 w-28 max-h-[1000px] h-full p-2">
             <div className="flex flex-col items-center gap-3">
-                <div className='p-3 rounded-full shadow-md'> <BiLogoFacebook size={25}/>  </div>
-                <div className='p-3 rounded-full shadow-md'> <PiInstagramLogoLight size={25}/>  </div>
-                <div className='p-3 rounded-full shadow-md'> <AiOutlineTwitter size={25}/>  </div>
-                <div className='p-3 rounded-full shadow-md'> <BiLogoLinkedin size={25}/>  </div>
+                <div className='p-3 rounded-full shadow-md'><Link href='https://www.facebook.com/Jjpconstruction/' target="_blank"><BiLogoFacebook size={25}/></Link></div>
+                <div className='p-3 rounded-full shadow-md'><Link href='https://www.facebook.com/Jjpconstruction/' target="_blank"><PiInstagramLogoLight size={25}/></Link></div>
+                <div className='p-3 rounded-full shadow-md'><Link href=""><AiOutlineTwitter size={25}/></Link></div>
+                <div className='p-3 rounded-full shadow-md'><Link href='https://www.linkedin.com/company/jjp-construction' target="_blank"><BiLogoLinkedin size={25}/></Link></div>
             </div>
             <button onClick={handleClick} className='flex flex-col items-center gap-2'>
                 <TfiMouseAlt/>
