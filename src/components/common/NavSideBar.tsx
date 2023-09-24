@@ -5,7 +5,7 @@ import classNames from "classnames"
 import { CiCircleAlert } from "react-icons/ci"
 import { BiHelpCircle } from "react-icons/bi"
 import { useAppSelector } from "@/store/hooks"
-
+import Image from "next/image"
 type Props = {}
 
 const NavSideBar = (props: Props) => {
@@ -26,7 +26,9 @@ const NavSideBar = (props: Props) => {
     ]
   return (
     <div className="flex flex-col gap-10 absolute top-0 left-0 w-44 h-[100vh]  max-h-[1000px]  p-3">
-        <Link href='/' className="fixed md:static top-0 z-30 w-full text-[#0A72AD] text-4xl font-bold bg-white">BUILDER</Link>
+        <Link href='/' className="fixed md:static top-0 z-30 w-full text-[#0A72AD] text-4xl font-bold bg-white">
+            <Image src='/black_logo.png'width={300} height={300}  alt="home builder la logo"/>
+        </Link>
         <div className="hidden md:block">
             <div className="mb-8">Main</div>
             <div className="flex flex-col font-bold">
