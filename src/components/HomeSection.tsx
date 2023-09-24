@@ -57,10 +57,10 @@ const HomeSection = (props: Props) => {
                 </div>
             </div>
             <div className="flex justify-center gap-3 pb-5">
-                <div className='p-3 rounded-full bg-black'> <BiLogoFacebook className='text-white' size={25} />  </div>
-                <div className='p-3 rounded-full bg-black'> <PiInstagramLogoLight className='text-white' size={25} />  </div>
-                <div className='p-3 rounded-full bg-black'> <AiOutlineTwitter className='text-white' size={25} />  </div>
-                <div className='p-3 rounded-full bg-black'> <BiLogoLinkedin className='text-white' size={25} />  </div>
+                <div className='p-3 rounded-full bg-black'> <Link href='https://www.facebook.com/Jjpconstruction/' target="_blank" ><BiLogoFacebook className='text-white' size={25} /></Link> </div>
+                <div className='p-3 rounded-full bg-black'><Link href='https://www.facebook.com/Jjpconstruction/' target="_blank"><PiInstagramLogoLight className='text-white' size={25} /> </Link>  </div>
+                <div className='p-3 rounded-full bg-black'><Link href=""><AiOutlineTwitter className='text-white' size={25} /> </Link>  </div>
+                <div className='p-3 rounded-full bg-black'><Link href='https://www.linkedin.com/company/jjp-construction' target="_blank"><BiLogoLinkedin className='text-white' size={25} /></Link>   </div>
             </div>
         </div>
     )
