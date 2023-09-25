@@ -51,13 +51,9 @@ const NavSideBar = (props: Props) => {
         <div className="mt-auto hidden md:block">
             <div className="mb-8">OTHERS</div>
             <div className="flex flex-col font-bold">
-                <Link href='' className="flex gap-3 items-center w-full py-3" >
+                <Link target="_blank" href='https://shelter-nine.vercel.app/about-us/#faq' className="flex gap-3 items-center w-full py-3" >
                     <CiCircleAlert size={25}/>
                     <div>FAQ</div>
-                </Link>
-                <Link href='' className="flex gap-3 items-center w-full py-3" >
-                    <BiHelpCircle size={25}/>
-                <div>Help</div> 
                 </Link>
             </div>
         </div>

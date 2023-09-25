@@ -1,6 +1,6 @@
 'use client'
 import { BiLogoFacebook, BiLogoLinkedin } from 'react-icons/bi'
-import { BsArrowUpRight } from 'react-icons/bs'
+import { BsArrowUpRight, BsYoutube } from 'react-icons/bs'
 import { PiInstagramLogoLight } from 'react-icons/pi'
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { useInView } from 'react-intersection-observer'
@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 import { setCurrentSection } from '@/store/navigation'
 import { useAppDispatch } from '@/store/hooks'
 import Link from 'next/link'
+import { SiHouzz } from 'react-icons/si'
 
 type Props = {}
 
@@ -57,10 +58,10 @@ const HomeSection = (props: Props) => {
                 </div>
             </div>
             <div className="flex justify-center gap-3 pb-5">
-                <div className='p-3 rounded-full bg-black'> <BiLogoFacebook className='text-white' size={25} />  </div>
-                <div className='p-3 rounded-full bg-black'> <PiInstagramLogoLight className='text-white' size={25} />  </div>
-                <div className='p-3 rounded-full bg-black'> <AiOutlineTwitter className='text-white' size={25} />  </div>
-                <div className='p-3 rounded-full bg-black'> <BiLogoLinkedin className='text-white' size={25} />  </div>
+                <Link target='_blanck' href="https://www.facebook.com/Jjpconstruction/" className='p-3 rounded-full bg-black'> <BiLogoFacebook className='text-white' size={25}/>  </Link>
+                <Link target='_blanck' href="https://www.instagram.com/jjpconstruction/" className='p-3 rounded-full bg-black'> <PiInstagramLogoLight className='text-white' size={25}/>  </Link>
+                <Link target='_blanck' href="https://www.youtube.com/@JasonPie/videos" className='p-3 rounded-full bg-black'> <BsYoutube className='text-white' size={25}/>  </Link>
+                <Link target='_blanck' href="https://www.houzz.com/professionals/home-builders/jjp-construction-pfvwus-pf~724293494?" className='p-3 rounded-full bg-black'> <SiHouzz className='text-white' size={25}/>  </Link>
             </div>
         </div>
     )

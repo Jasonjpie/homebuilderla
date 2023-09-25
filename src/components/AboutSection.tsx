@@ -7,6 +7,9 @@ import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
 import { setCurrentSection } from '@/store/navigation'
 import { useAppDispatch } from '@/store/hooks'
+import Link from 'next/link'
+import { BsYoutube } from 'react-icons/bs'
+import { SiHouzz } from 'react-icons/si'
 
 type Props = {}
 
@@ -56,10 +59,10 @@ const AboutSection = (props: Props) => {
                 </button>
             </div>
             <div className="flex items-center gap-3">
-                <div className='p-3 rounded-full bg-black shadow-md'> <BiLogoFacebook className='text-white' size={25}/>  </div>
-                <div className='p-3 rounded-full bg-black shadow-md'> <PiInstagramLogoLight className='text-white' size={25}/>  </div>
-                <div className='p-3 rounded-full bg-black shadow-md'> <AiOutlineTwitter className='text-white' size={25}/>  </div>
-                <div className='p-3 rounded-full bg-black shadow-md'> <BiLogoLinkedin className='text-white' size={25}/>  </div>
+                <Link target='_blanck' href="https://www.facebook.com/Jjpconstruction/" className='p-3 rounded-full bg-black'> <BiLogoFacebook className='text-white' size={25}/>  </Link>
+                <Link target='_blanck' href="https://www.instagram.com/jjpconstruction/" className='p-3 rounded-full bg-black'> <PiInstagramLogoLight className='text-white' size={25}/>  </Link>
+                <Link target='_blanck' href="https://www.youtube.com/@JasonPie/videos" className='p-3 rounded-full bg-black'> <BsYoutube className='text-white' size={25}/>  </Link>
+                <Link target='_blanck' href="https://www.houzz.com/professionals/home-builders/jjp-construction-pfvwus-pf~724293494?" className='p-3 rounded-full bg-black'> <SiHouzz className='text-white' size={25}/>  </Link>
             </div>
         </div>
         <div className='flex flex-col gap-10'>
@@ -98,10 +101,10 @@ const AboutSection = (props: Props) => {
                 </button>
             </div>
             <div className="flex items-center gap-3">
-                <div className='p-3 rounded-full shadow-md'> <BiLogoFacebook size={25}/>  </div>
-                <div className='p-3 rounded-full shadow-md'> <PiInstagramLogoLight size={25}/>  </div>
-                <div className='p-3 rounded-full shadow-md'> <AiOutlineTwitter size={25}/>  </div>
-                <div className='p-3 rounded-full shadow-md'> <BiLogoLinkedin size={25}/>  </div>
+                <Link target='_blanck' href="https://www.facebook.com/Jjpconstruction/" className='p-3 rounded-full shadow-md'> <BiLogoFacebook size={25}/>  </Link>
+                <Link target='_blanck' href="https://www.instagram.com/jjpconstruction/" className='p-3 rounded-full shadow-md'> <PiInstagramLogoLight size={25}/>  </Link>
+                <Link target='_blanck' href="https://www.youtube.com/@JasonPie/videos" className='p-3 rounded-full shadow-md'> <BsYoutube size={25}/>  </Link>
+                <Link target='_blanck' href="https://www.houzz.com/professionals/home-builders/jjp-construction-pfvwus-pf~724293494?" className='p-3 rounded-full shadow-md'> <SiHouzz size={25}/>  </Link>
             </div>
         </div>
     </div>
