@@ -75,7 +75,7 @@ const ContactUs = (props: Props) => {
         }
     }, [inView])
     return (
-        <div ref={ref} id='contact-us' className="w-full bg-[#0A72AD] bg-opacity-10 mb-24">
+        <div ref={ref} id='contact-us' className="w-full bg-[#416FF4] bg-opacity-30 mb-24">
             <div className="flex flex-col items-center gap-10 py-44">
                 <div className="text-center text-4xl font-semibold max-w-md">
                     Want your dream house? Contact Us
