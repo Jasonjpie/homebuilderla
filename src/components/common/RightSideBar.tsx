@@ -20,7 +20,7 @@ const RightSideBar = (props: Props) => {
         }
     }
   return (
-        <div className="absolute flex flex-col justify-center gap-24 top-0 right-0 w-28 max-h-[1000px] h-full p-2">
+        <div className="absolute hidden lg:flex flex-col justify-center gap-24 top-0 right-0 w-28 max-h-[1000px] h-full p-2">
             <div className="flex flex-col items-center gap-3">
                 <Link target='_blanck' href="https://www.facebook.com/Jjpconstruction/" className='p-3 rounded-full shadow-md'> <BiLogoFacebook size={25}/>  </Link>
                 <Link target='_blanck' href="https://www.instagram.com/jjpconstruction/" className='p-3 rounded-full shadow-md'> <PiInstagramLogoLight size={25}/>  </Link>

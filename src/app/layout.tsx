@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html className='overflow-hidden' lang="en">
-        <body className={`relative max-w-[1560px] w-full h-full mx-auto ${inter.className}`}>
+        <body className={`relative max-w-[1560px] w-full h-[100vh] mx-auto ${inter.className}`}>
           <Providers>
            <App>{children}</App>
           </Providers>,
