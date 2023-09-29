@@ -33,7 +33,7 @@ const ContactUs = (props: Props) => {
         if (isValid) {
             // Replace these values with your own EmailJS template and user ID
             emailjs
-                .send('service_e3gfj5u', 'template_lsf6ept', {
+                .send('service_1ewdayd', 'template_s1cnbtr', {
                     from: "homebuilderla.com",
                     to_name: "Jeson P.",
                     // from_name: email,
@@ -41,7 +41,7 @@ const ContactUs = (props: Props) => {
                     // subject: '',
                     // message: '',
                     reply_to: email
-                }, 'lBEGkhwko5Z_AnqC5')
+                }, 'D5maOIBS7PmgmBLyM')
                 .then((result) => {
                     console.log(result.text);
                     setSuccessMessage('Email sent successfully!');
