@@ -17,10 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html className='overflow-hidden' lang="en">
-      <head>
+       <head>
         <link rel="shortcut icon" type='image/svg+xml' href="/homebuilder_smaller_logo.svg" />
       </head>
-        <body className={`relative max-w-[1560px] w-full h-full mx-auto ${inter.className}`}>
+        <body className={`relative max-w-[1560px] w-full h-[100vh] mx-auto ${inter.className}`}>
           <Providers>
            <App>{children}</App>
           </Providers>,

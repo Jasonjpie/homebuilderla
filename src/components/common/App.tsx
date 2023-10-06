@@ -44,7 +44,7 @@ const App = ({children}: Props) => {
   return (
     <>            
         <NavSideBar/>
-        <div ref={container} className='md:ml-44 mr-28 px-5 h-[100vh] overflow-y-auto scroll-smooth no-scrollbar'>{children}</div>
+        <div ref={container} className='md:ml-44 md:mr-28 pt-12 lg:px-5 h-[100vh] overflow-y-auto scroll-smooth no-scrollbar'>{children}</div>
         <RightSideBar/>
     </>
   )
