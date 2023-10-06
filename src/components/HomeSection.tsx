@@ -27,7 +27,7 @@ const HomeSection = (props: Props) => {
             <div>Dedicated to Transforming Your Unique Visions into Remarkable Realities with Expertise and Passion</div>
             <div className='grid grid-cols-12 gap-10'>
                 <div className='col-span-12 md:col-span-6 lg:col-span-4 p-10 bg-black text-white text-left'>
-                    <Link className='flex flex-col gap-5' href='https://shelter-nine.vercel.app/' target='_blank'>
+                    <Link className='flex flex-col gap-5' href='https://sheltercustomhomesla.com/' target='_blank'>
                         <div className='flex flex-row justify-between mb-5'>
                             {/* <div className='font-bold text-3xl'>01</div> */}
                             <div className='font-semibold text-2xl max-w-xs'>Interior Design</div>
@@ -37,7 +37,7 @@ const HomeSection = (props: Props) => {
                     </Link>
                 </div>
                 <div className='col-span-12 md:col-span-6 lg:col-span-4 p-10 bg-black text-white text-left'>
-                    <Link className='flex flex-col gap-5' href='https://jjp-beta.vercel.app/' target='_blank'>
+                    <Link className='flex flex-col gap-5' href='https://jjpconstructioninc.com/' target='_blank'>
                         <div className='flex flex-row justify-between mb-5'>
                             {/* <div className='font-bold text-3xl'>02</div> */}
                             <div className='font-semibold text-2xl max-w-xs'>Construction Management</div>
@@ -47,7 +47,7 @@ const HomeSection = (props: Props) => {
                     </Link>
                 </div>
                 <div className='col-span-12 md:col-span-6 lg:col-span-4 p-10 bg-[#FFD400] text-black text-left'>
-                    <Link className='flex flex-col gap-5' href='https://shelter-nine.vercel.app/' target='_blank'>
+                    <Link className='flex flex-col gap-5' href='https://sheltercustomhomesla.com/' target='_blank'>
                         <div className='flex flex-row justify-between mb-5'>
                             {/* <div className='font-bold text-3xl'>03</div> */}
                             <div className='font-semibold text-2xl max-w-xs'>Architectural Design</div>
