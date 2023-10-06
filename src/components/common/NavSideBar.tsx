@@ -27,7 +27,7 @@ const NavSideBar = (props: Props) => {
   return (
     <div className="flex flex-col gap-10 absolute top-0 left-0 w-44 h-[100vh]  max-h-[1000px]  p-3">
         <Link href='/' className="fixed md:static top-0 z-30 w-full text-[#0A72AD] text-4xl font-bold bg-white">
-            <Image src='/logo.svg'width={300} height={300}  alt="home builder la logo"/>    
+            <Image src='/home_builderlogo.svg'width={300} height={300}  alt="home builder la logo"/>    
         </Link>
         <div className="hidden md:block">
             <div className="mb-8">Main</div>
