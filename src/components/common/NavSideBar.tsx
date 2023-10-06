@@ -44,7 +44,7 @@ const NavSideBar = (props: Props) => {
             {showMenu && <MobileBar close={() => setShowMenu(false)} />}
 
             <div className="hidden md:block">
-                <div className="mb-8">Main</div>
+                <div className="mb-8"></div>
                 <div className="flex flex-col font-bold">
                     {
                         Routes.map((route, index) =>
